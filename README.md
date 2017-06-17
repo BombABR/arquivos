@@ -1,4 +1,4 @@
-# tooncitydl
+# ToonCiTYDL CDN
 Arquivos do site ToonCiTY DOWNLOADS.
 # ARQUIVOS:
 ### JAVASCRIPT
