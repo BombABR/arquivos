@@ -1,5 +1,5 @@
 # tooncitydl
 Arquivos do site ToonCiTY DOWNLOADS.
 # ARQUIVOS:
-# JAVASCRIPT
+JAVASCRIPT
 https://bombabr.github.io/tooncitydl/scripts.min.js
