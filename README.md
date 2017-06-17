@@ -1,4 +1,4 @@
-# ToonCiTYDL CDN
+# ToonCiTYDL
 Arquivos do blog [ToonCiTY DOWNLOADS](http://www.tooncitydl.ga).
 # ARQUIVOS:
 ### JAVASCRIPT
