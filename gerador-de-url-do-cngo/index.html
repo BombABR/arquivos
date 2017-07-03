@@ -11,37 +11,56 @@
 <button id="gerador" type="button">Gerar link</button>
 <!-- scripts -->
 <script>
-var nDaSorte = Math.floor(Math.random() * 10000);
-var nDaSorte1 = Math.floor(Math.random() * 10000);
-var nDaSorte2 = Math.floor(Math.random() * 10000);
-var nDaSorte3 = Math.floor(Math.random() * 10000);
-var nDaSorte4 = Math.floor(Math.random() * 10000);
-var nDaSorte5 = Math.floor(Math.random() * 10000);
-var nDaSorte6 = Math.floor(Math.random() * 10000);
-var nDaSorte7 = Math.floor(Math.random() * 10000);
-var nDaSorte8 = Math.floor(Math.random() * 10000);
-var nDaSorte9 = Math.floor(Math.random() * 10000);
+function makeid() {
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+  for (var i = 0; i < 4; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return text;
+}
 $('#gerador').click(function() {
-  var link = "http://phds-vod-tvela.saoweb.io/tbsila/big/secure/2017-06/TVEA010100000015" + nDaSorte + "/TVEA010100000016" + nDaSorte + "_1928kbps_1280x720.mp4";
-  var link1 = "http://phds-vod-tvela.saoweb.io/tbsila/big/secure/2017-06/TVEA010100000015" + nDaSorte1 + "/TVEA010100000016" + nDaSorte1 + "_1928kbps_1280x720.mp4";
-  var link2 = "http://phds-vod-tvela.saoweb.io/tbsila/big/secure/2017-07/TVEA010100000016" + nDaSorte2 + "/TVEA010100000016" + nDaSorte2 + "_1928kbps_1280x720.mp4";
-  var link3 = "http://phds-vod-tvela.saoweb.io/tbsila/big/secure/2017-06/TVEA010100000016" + nDaSorte3 + "/TVEA010100000016" + nDaSorte3 + "_1928kbps_1280x720.mp4";
-  var link4 = "http://phds-vod-tvela.saoweb.io/tbsila/big/secure/2017-06/TVEA010100000015" + nDaSorte4 + "/TVEA010100000016" + nDaSorte4 + "_1928kbps_1280x720.mp4";
-  var link5 = "http://phds-vod-tvela.saoweb.io/tbsila/big/secure/2017-06/TVEA010100000015" + nDaSorte5 + "/TVEA010100000016" + nDaSorte5 + "_1928kbps_1280x720.mp4";
-  var link6 = "http://phds-vod-tvela.saoweb.io/tbsila/big/secure/2017-07/TVEA010100000016" + nDaSorte6 + "/TVEA010100000016" + nDaSorte6 + "_1928kbps_1280x720.mp4";
-  var link7 = "http://phds-vod-tvela.saoweb.io/tbsila/big/secure/2017-06/TVEA010100000016" + nDaSorte7 + "/TVEA010100000016" + nDaSorte7 + "_1928kbps_1280x720.mp4";
-  var link8 = "http://phds-vod-tvela.saoweb.io/tbsila/big/secure/2017-06/TVEA010100000015" + nDaSorte8 + "/TVEA010100000016" + nDaSorte8 + "_1928kbps_1280x720.mp4";
-  var link9 = "http://phds-vod-tvela.saoweb.io/tbsila/big/secure/2017-06/TVEA010100000016" + nDaSorte9 + "/TVEA010100000016" + nDaSorte9 + "_1928kbps_1280x720.mp4";
-  document.write("<video controls><source src='" + link + "'></source></video><br />");
-  document.write("<video controls><source src='" + link1 + "'></source></video><br />");
-  document.write("<video controls><source src='" + link2 + "'></source></video><br />");
-  document.write("<video controls><source src='" + link3 + "'></source></video><br />");
-  document.write("<video controls><source src='" + link4 + "'></source></video><br />");
-  document.write("<video controls><source src='" + link5 + "'></source></video><br />");
-  document.write("<video controls><source src='" + link6 + "'></source></video><br />");
-  document.write("<video controls><source src='" + link7 + "'></source></video><br />");
-  document.write("<video controls><source src='" + link8 + "'></source></video><br />");
-  document.write("<video controls><source src='" + link9 + "'></source></video><br />");
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
+  console.log(makeid());
 });
 </script>
 </body>
