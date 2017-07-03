@@ -9,11 +9,12 @@
 <body>
 <!-- conteudo -->
 <button id="gerador" type="button">Gerar link</button>
+<p id="link"></p>
 <!-- scripts -->
 <script>
 var nDaSorte = Math.floor(Math.random() * 10000);
 $('#gerador').click(function() {
-  document.write( "http://phds-vod-tvela.saoweb.io/tbsila/big/secure/2017-06/TVEA010100000016" + nDaSorte + "/TVEA010100000016" + nDaSorte + "_1928kbps_1280x720.mp4<br /><button id="gerador" type="button">Gerar link</button>");
+  $('#link').write("http://phds-vod-tvela.saoweb.io/tbsila/big/secure/2017-06/TVEA010100000016" + nDaSorte + "/TVEA010100000016" + nDaSorte + "_1928kbps_1280x720.mp4<br /><button id="gerador" type="button">Gerar link</button>");
 });
 </script>
 </body>
