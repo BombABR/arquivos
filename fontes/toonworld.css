@@ -1,0 +1,5 @@
+@font-face {font-family: CNBold; src: url(https://repo.tooncitydl.ga/fontes/CN%20Bold.ttf)};
+@font-face {font-family: Avenir Next Rounded; src: url(https://repo.tooncitydl.ga/fontes/Avenir%20Next%20Rounded/AvenirNextRoundedPro-Reg.otf); font-weight: 400};
+@font-face {font-family: Avenir Next Rounded; src: url(https://repo.tooncitydl.ga/fontes/Avenir%20Next%20Rounded/AvenirNextRoundedPro-Bold.otf); font-weight: 700};
+h1,h2,h3,h4,h5,h6 {font-family: CNBold};
+body {font-family: AvenirNextRounded};
