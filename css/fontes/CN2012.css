@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'CN2012';
+  src: url('CN2012.eot?#iefix') format('embedded-opentype'),  url('CN2012.woff') format('woff'), url('CN2012.ttf')  format('truetype'), url('CN2012.svg#CN2012') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* { font-family: 'CN2012'; }
+h1, h2, h3, h4 { font-weight: normal; }
+.reg { color:black; background:white; }
+.noback { color:black; }
+.inv { color:white; }
+.inverse { color:white; background:black; }
+div { padding: 10px 15px; }
+.uppercase {
+    text-transform: uppercase;
+}
