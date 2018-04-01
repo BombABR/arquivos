@@ -30,7 +30,7 @@ var end = getParameterByName('end');
 var res = getParameterByName('res');
 function videos() {
     for(var i = start; i <= end; i++){
-        document.write('<video width="360" height="640" controls><source src="http://phds-vod-tvela.saoweb.io/tbsila/big/secure/'+data+'/TVEA0101000000' + i + '/TVEA0101000000' + i + '_' + res +'.mp4"></source></video>');
+        document.write('<video width="640" height="360" controls><source src="http://phds-vod-tvela.saoweb.io/tbsila/big/secure/'+data+'/TVEA0101000000' + i + '/TVEA0101000000' + i + '_' + res +'.mp4"></source></video>');
     }
 }
 videos();
