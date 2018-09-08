@@ -1,0 +1,29 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<h1>CNGO Downloader</h1>
+<p>Baixe a extensão <a href="https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi">Allow-Control-Allow-Origin: *</a> para o downloader funcionar.</p>
+<p>Insira a URL do vídeo:</p>
+<textarea id="urlpag1" rows="4" cols="50">
+</textarea>
+<p>Escolha a qualidade do download:</p>
+<select>
+  <option value="720p">720p</option>
+  <option value="480p">720p</option>
+  <option value="360p">360p</option>
+  <option value="240p">240p</option>
+</select>
+<button id="confirma">Baixar</button>
+<div id="invisivel" style="display: none">
+</div>
+<script>
+var q720 = 1928;
+var q480 = 1328;
+var q360 = 914;
+var q240 = 482;
+jQuery("#confirma").click(function() {
+  var urlpag = jQuery("#urlpag1").val();
+  $("#invisivel").load(urlpag, function() {
+    videoId = $(this).attr("data-videoid");
+    alert(videoId);
+  });
+});
+</script>
