@@ -3,11 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Cartoon Network ao vivo - Player</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video-js.min.css" integrity="sha256-mujqz1jG8djcBxoJnvfvTIjRxz7y5xNpzY18x8au5ck=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video.min.js" integrity="sha256-FtN3AlYCFtRDFdQIG+XM7JgkF3CYyzDkysTR34GUII4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/lang/pt-BR.js" integrity="sha256-vKD1BjlZxzypZbcdUU4Ys0f/HABMMQrZnSL1zyr9AoE=" crossorigin="anonymous"></script>
+<script src='https://cdn.jsdelivr.net/npm/clappr@0.2.93/dist/clappr.min.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@2.2.7/dist/dash-shaka-playback.min.js'></script>
 <style>
-#player {
+.player {
 position: absolute;
 top: 0;
 left: 0;
@@ -17,8 +16,16 @@ height: 100%;
 </style>
 </head>
 <body>
-<video id="player" class="video-js" controls poster="https://3.bp.blogspot.com/-D2pqG_yTfs8/W8UQSJ93iJI/AAAAAAAAFg4/rMn007hmvsApkNmbe7Hx9cEM-Y-cROsggCLcBGAs/s1600/cn-aovivo.png" data-setup='{}'>
-<source src="https://cdn.tooncitydl-stream.gq/hls/cartoonbrhd.m3u8" type="application/x-mpegURL"></source>
-</video>
+<div class="player"></div>
+<script>
+var player = new Clappr.Player({
+    plugins: [DashShakaPlayback],
+    source: 'https://cdn.tooncitydl-stream.gq/dash/cartoonbrhd.mpd',
+    poster: 'https://3.bp.blogspot.com/-D2pqG_yTfs8/W8UQSJ93iJI/AAAAAAAAFg4/rMn007hmvsApkNmbe7Hx9cEM-Y-cROsggCLcBGAs/s1600/cn-aovivo.png',
+    parent: '.player',
+    height: '100%',
+    width: '100%'
+});
+</script>
 </body>
 </html>
