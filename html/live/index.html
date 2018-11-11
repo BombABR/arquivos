@@ -3,9 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Cartoon Network ao vivo - Player</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video-js.min.css" integrity="sha256-mujqz1jG8djcBxoJnvfvTIjRxz7y5xNpzY18x8au5ck=" crossorigin="anonymous" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video.min.js" integrity="sha256-FtN3AlYCFtRDFdQIG+XM7JgkF3CYyzDkysTR34GUII4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/lang/pt-BR.js" integrity="sha256-vKD1BjlZxzypZbcdUU4Ys0f/HABMMQrZnSL1zyr9AoE=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/5.9.2/video-js.min.css" integrity="sha256-Q3VCZHxo9MmBG+wNZpyR4K1+TBxqDQwzER5djVGDx8k=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/5.9.2/video.min.js" integrity="sha256-i1kAxEJyl62XtngCnesazfRHN57CrsvurR4oQacDc/4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/5.9.2/lang/pt-BR.js" integrity="sha256-XRtUzIAyxgGh/5tdkDAPpEADlHCS/o4socHWd5tOO/k=" crossorigin="anonymous"></script>
+<script src="https://cdn.viblast.com/vb/stable/viblast.js"></script>
 <style>
 #player {
 position: absolute;
@@ -19,7 +20,7 @@ height: 100%;
 </style>
 </head>
 <body>
-<video id="player" class="video-js" controls poster="https://3.bp.blogspot.com/-D2pqG_yTfs8/W8UQSJ93iJI/AAAAAAAAFg4/rMn007hmvsApkNmbe7Hx9cEM-Y-cROsggCLcBGAs/s1600/cn-aovivo.png" data-setup="{}">
+<video id="player" controls poster="https://3.bp.blogspot.com/-D2pqG_yTfs8/W8UQSJ93iJI/AAAAAAAAFg4/rMn007hmvsApkNmbe7Hx9cEM-Y-cROsggCLcBGAs/s1600/cn-aovivo.png" class="video-js vjs-default-skin" data-setup="{}" data-viblast-key="f3a4b81a-a06c-4719-a3af-0bf664d7986c" data-viblast-enable-realtime-logger="true">
 <source src="https://cdn.tooncitydl-stream.gq/hls/cartoonbrhd.m3u8" type="application/x-mpegURL"></source>
 </video>
 </body>
