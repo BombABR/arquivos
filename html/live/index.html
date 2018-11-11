@@ -8,6 +8,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dashjs/2.9.2/dash.all.min.js" integrity="sha256-EmXFhpSryXnCa3tOiKDfYUFhpmnkvo3PSe3Tj3KpX6o=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-dash/2.10.0/videojs-dash.min.js" integrity="sha256-xhLRr5mlvCCC7DndQjNURZOXGxwYUoB2VoF0mNUiuJc=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/lang/pt-BR.js" integrity="sha256-vKD1BjlZxzypZbcdUU4Ys0f/HABMMQrZnSL1zyr9AoE=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <style>
 #player {
 position: absolute;
@@ -24,9 +25,13 @@ height: 100%;
 <script>
 var player = videojs('player');
 if (window.MediaSource) {
-  player.src({ src: 'https://cdn.tooncitydl-stream.gq/dash/cartoonbrhd.mpd', type: 'application/dash+xml'});
+    player.src({
+        src: 'https://cdn.tooncitydl-stream.gq/dash/cartoonbrhd.mpd',
+        type: 'application/dash+xml'
+    });
+    player.play()
 } else {
-  player.src({ src: 'https://cdn.tooncitydl-stream.gq/hls/cartoonbrhd.m3u8', type: 'application/x-mpegURL'});
+    $('video').append('<source src="https://cdn.tooncitydl-stream.gq/hls/cartoonbrhd.m3u8" type="application/x-mpegURL"></source>');
 };
 </script>
 </body>
