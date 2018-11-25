@@ -20,8 +20,21 @@ height: 100%;
 </style>
 </head>
 <body>
-<video id="player" controls poster="https://3.bp.blogspot.com/-D2pqG_yTfs8/W8UQSJ93iJI/AAAAAAAAFg4/rMn007hmvsApkNmbe7Hx9cEM-Y-cROsggCLcBGAs/s1600/cn-aovivo.png" class="video-js vjs-default-skin" data-setup="{}" data-viblast-key="f3a4b81a-a06c-4719-a3af-0bf664d7986c" data-viblast-abr="false" data-viblast-enable-realtime-logger="true">
-<source src="https://cdn.tooncitydl-stream.gq/hls/cartoonbrhd.m3u8" type="application/x-mpegURL"></source>
+<video id="player" poster="https://3.bp.blogspot.com/-D2pqG_yTfs8/W8UQSJ93iJI/AAAAAAAAFg4/rMn007hmvsApkNmbe7Hx9cEM-Y-cROsggCLcBGAs/s1600/cn-aovivo.png" controls class="video-js vjs-default-skin">
 </video>
+<script>
+var videoElement = document.getElementsByTagName("video")[0];
+
+window.videojs(videoElement, {
+   "viblast": {
+      "key": "f3a4b81a-a06c-4719-a3af-0bf664d7986c",
+      "abr": false,
+      "enableRealtimeLogger": true,
+      "clearkey": {},
+      "stream": "https://dhi9hq3pw4iz.cloudfront.net/m3u8/live_WeLive-Ext-OL_21600491_2_653185.m3u8"
+   }
+});
+window.videojs(videoElement).src({type: "application/x-mpegURL", src: "https://dhi9hq3pw4iz.cloudfront.net/m3u8/live_WeLive-Ext-OL_21600491_2_653185.m3u8"});
+</script>
 </body>
 </html>
