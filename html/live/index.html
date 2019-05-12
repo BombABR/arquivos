@@ -23,6 +23,23 @@ height: 100%;
 <video id="player" poster="https://3.bp.blogspot.com/-D2pqG_yTfs8/W8UQSJ93iJI/AAAAAAAAFg4/rMn007hmvsApkNmbe7Hx9cEM-Y-cROsggCLcBGAs/s1600/cn-aovivo.png" controls class="video-js vjs-default-skin">
 </video>
 <script>
+// token
+
+var xhr = new XMLHttpRequest();
+
+xhr.open("POST", "https://tlienogeg5.execute-api.us-west-2.amazonaws.com/qa", true);
+xhr.setRequestHeader("x-api-key", "s3yVaHkSVwaq58B5wnUNx27XEah4WpVR3lMonSib");
+xhr.send(JSON.stringify({token_type: "live_token"}));
+
+xhr.onreadystatechange = function() {
+    if (xhr.readyState == XMLHttpRequest.DONE) {
+        resultado = JSON.parse(xhr.response);
+        token = resultado.body.auth.token;
+    };
+};
+
+// player
+
 var videoElement = document.getElementsByTagName("video")[0];
 
 window.videojs(videoElement, {
@@ -30,10 +47,11 @@ window.videojs(videoElement, {
       "key": "f3a4b81a-a06c-4719-a3af-0bf664d7986c",
       "abr": false,
       "clearkey": {},
-      "stream": "https://cdn.tooncitydl-stream.gq/hls/cartoonbrhd.m3u8"
+      "stream": "https://latam2-lh.akamaihd.net/i/CTN_BRA@445596/master.m3u8?hdnea=" + token
    }
 });
-window.videojs(videoElement).src({type: "application/x-mpegURL", src: "https://cdn.tooncitydl-stream.gq/hls/cartoonbrhd.m3u8"});
+
+window.videojs(videoElement).src({type: "application/x-mpegURL", src: "https://latam2-lh.akamaihd.net/i/CTN_BRA@445596/master.m3u8?hdnea=" + token});
 </script>
 </body>
 </html>
