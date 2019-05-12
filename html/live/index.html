@@ -28,7 +28,7 @@ xhr.onreadystatechange = function() {
     if (xhr.readyState == XMLHttpRequest.DONE) {
         var resultado = JSON.parse(xhr.response);
         var token = resultado.body.auth.token;
-        var player = new Clappr.Player({source: "https://latam2-lh.akamaihd.net/i/CTN_BRA@445596/master.m3u8?hdnea=" + token, poster: "https://3.bp.blogspot.com/-D2pqG_yTfs8/W8UQSJ93iJI/AAAAAAAAFg4/rMn007hmvsApkNmbe7Hx9cEM-Y-cROsggCLcBGAs/s1600/cn-aovivo.png", parentId: "#player"});
+        var player = new Clappr.Player({source: "https://latam2-lh.akamaihd.net/i/CTN_BRA@445596/master.m3u8?hdnea=" + token, poster: "https://3.bp.blogspot.com/-D2pqG_yTfs8/W8UQSJ93iJI/AAAAAAAAFg4/rMn007hmvsApkNmbe7Hx9cEM-Y-cROsggCLcBGAs/s1600/cn-aovivo.png", height: "100%", width: "100%", parentId: "#player"});
     };
 };
 </script>
